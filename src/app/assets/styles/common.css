@@ -1,0 +1,181 @@
+:root {
+  --background-color: rgb(239, 241, 244);
+  --background-main-color: rgb(255, 255, 255);
+  --background-accent-color: rgb(0, 135, 201);
+  --background-high-accent-color: rgb(255, 177, 104);
+
+  --border-light-color: rgb(211, 211, 211);
+  --border-dark-color: rgb(169, 169, 169);
+  --border-accent-color: rgb(0, 135, 201);
+  --border-high-accent-color: rgb(255, 142, 29);
+
+  --text-main-dark-color: rgb(0, 0, 0);
+  --text-main-light-color: rgb(255, 255, 255);
+  --text-main-gray-color: rgb(169, 169, 169);
+  --text-accent-color: rgb(0, 135, 201);
+  --text-high-accent-color: rgb(255, 142, 29);
+
+  --common-transition: all 0.3s ease-in;
+}
+
+/* Custom-scroll classes */
+.custom-scroll::-webkit-scrollbar {
+  width: 12px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: var(--background-medium-color);
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: var(--background-light-color);
+  border: 3px solid var(--background-medium-color);
+  border-radius: 6px;
+}
+
+/* Typography classes */
+.text {
+  font-family: 'Gotham Pro';
+  line-height: 1;
+}
+
+.text_type_normal {
+  font-weight: normal;
+}
+
+.text_type_bold {
+  font-weight: bold;
+}
+
+.text_type_align_end {
+  text-align: end;
+}
+
+.text_type_light_main {
+  color: var(--text-main-light-color);
+}
+
+.text_type_accent {
+  color: var(--text-accent-color);
+}
+
+.text_type_high_accent {
+  color: var(--text-high-accent-color);
+}
+
+.text_size_s {
+  font-size: 12px;
+}
+
+.text_size_m {
+  font-size: 16px;
+}
+
+.text_size_l {
+  font-size: 20px;
+}
+
+/* Container classes */
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.pt-8 {
+  padding-top: 8px;
+}
+
+.pt-12 {
+  padding-top: 12px;
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-8 {
+  padding-bottom: 8px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.pb-16 {
+  padding-bottom: 16px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pl-8 {
+  padding-left: 8px;
+}
+
+.pl-12 {
+  padding-left: 12px;
+}
+
+.pl-16 {
+  padding-left: 16px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-8 {
+  padding-right: 8px;
+}
+
+.pr-12 {
+  padding-right: 12px;
+}
+
+.pr-16 {
+  padding-right: 16px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@media screen and (max-width: 680px) {
+  .custom-scroll::-webkit-scrollbar {
+    width: 0px;
+  }
+}

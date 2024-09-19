@@ -1,0 +1,23 @@
+.flights_list_container {
+  width: 100%;
+  max-width: 940px;
+  min-width: 580px;
+  margin: 0;
+  padding: 0;
+  margin-right: 160px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+}
+
+.flights_list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+}

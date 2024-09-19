@@ -1,1 +1,11 @@
-# flight-search-result-filter
+## Тестовое задание
+
+### Страница отображения результатов поиска авиабилетов с функционалом для фильтрации и сортировки
+
+#### Стек:
+- HTML5, CSS3
+- JavaScript
+- TypeScript
+- React
+- Redux
+- Redux-toolkit

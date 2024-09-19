@@ -1,0 +1,10 @@
+.segment_brief_container {
+  width: max-content;
+  display: flex;
+  align-items: flex-end;
+  column-gap: 12px;
+}
+
+.segment_brief_container_extra {
+  justify-content: flex-end;
+}

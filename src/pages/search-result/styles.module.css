@@ -1,0 +1,8 @@
+.section_container {
+  width: 100%;
+  max-width: 1260px;
+  min-width: 900px;
+
+  display: flex;
+  column-gap: 20px;
+}

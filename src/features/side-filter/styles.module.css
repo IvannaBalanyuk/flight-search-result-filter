@@ -1,0 +1,39 @@
+.filters_container {
+  width: 300px;
+  height: max-content;
+  min-height: 790px;
+  border: 1px solid var(--border-light-color);
+  border-radius: 6px;
+  background-color: var(--background-main-color);
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.filter_wparrer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.filter_title {
+  width: 100%;
+}
+
+.filter {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.filter_type_default {
+  row-gap: 12px;
+}
+
+.filter_type_prices {
+  row-gap: 20px;
+}
