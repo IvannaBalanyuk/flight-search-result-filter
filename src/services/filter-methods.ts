@@ -108,7 +108,7 @@ export const sortByDuration = ({
 
 type FilterByLayoversParamsType = {
   initialFlights: Array<FlightInfoType>;
-  layoversFilterContent: LayoversFilterContentType<string>;
+  layoversFilterContent: LayoversFilterContentType;
 };
 
 export const filterByLayovers = ({

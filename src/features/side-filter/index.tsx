@@ -33,13 +33,13 @@ export const SideFilters = () => {
   const checkCarriersFilterHandler = ({
     target,
   }: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    dispatch(actions.setCarriersFilterContent({ uid: target.id }));
+    dispatch(actions.setCarriersFilterContent(target.id));
   };
 
   const checkLayoversFilterHandler = ({
     target,
   }: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    dispatch(actions.setLayoversFilterContent({ kind: target.id }));
+    dispatch(actions.setLayoversFilterContent(target.id));
   };
 
   const checkSortingFilterHandler = ({
@@ -109,14 +109,14 @@ export const SideFilters = () => {
         >
           <Checkbox
             label="- 1 пересадка"
-            name="layovers-filter"
+            name={LayoversFilterKind.ONE_LAYOVER}
             id={LayoversFilterKind.ONE_LAYOVER}
             onChange={checkLayoversFilterHandler}
             checked={layoversFilterContent?.oneLayover}
           ></Checkbox>
           <Checkbox
             label="- без пересадок"
-            name="layovers-filter"
+            name={LayoversFilterKind.WITHOUT_LAYOVERS}
             id={LayoversFilterKind.WITHOUT_LAYOVERS}
             onChange={checkLayoversFilterHandler}
             checked={layoversFilterContent?.withoutLayovers}

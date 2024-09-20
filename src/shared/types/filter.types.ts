@@ -9,8 +9,9 @@ export enum LayoversFilterKind {
   WITHOUT_LAYOVERS = 'withoutLayovers',
 }
 
-export type LayoversFilterContentType<T extends string> = {
-  [key in T]: boolean;
+export type LayoversFilterContentType = {
+  oneLayover: boolean;
+  withoutLayovers: boolean;
 };
 
 export enum PriceFilterKind {

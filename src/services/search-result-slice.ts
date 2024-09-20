@@ -4,6 +4,7 @@ import { FlightInfoType } from '../shared/types/flights.types';
 import {
   CarriersFilterContentType,
   LayoversFilterContentType,
+  LayoversFilterKind,
   SortingFilterKind,
 } from '../shared/types/filter.types';
 
@@ -11,7 +12,7 @@ type SearchResultSliceStateType = {
   initialFlights: Array<FlightInfoType> | null;
   filteredFlights: Array<FlightInfoType> | null;
   checkedSortingFilter: SortingFilterKind | null;
-  layoversFilterContent: LayoversFilterContentType<string>;
+  layoversFilterContent: LayoversFilterContentType;
   carriersFilterContent: CarriersFilterContentType<string> | null;
   priceFilterMinValue: number | null;
   priceFilterMaxValue: number | null;
@@ -45,7 +46,7 @@ const searchResultSlice = createSlice({
       state.checkedSortingFilter = action.payload;
     },
     setLayoversFilterContent: (state, action) => {
-      const { kind } = action.payload;
+      const kind: LayoversFilterKind = action.payload;
       const layoversFilter = state.layoversFilterContent[kind];
       state.layoversFilterContent[kind] = !layoversFilter;
     },
@@ -53,7 +54,7 @@ const searchResultSlice = createSlice({
       state.carriersFilterContent = action.payload;
     },
     setCarriersFilterContent: (state, action) => {
-      const { uid } = action.payload;
+      const uid: string = action.payload;
 
       if (state.carriersFilterContent) {
         const carrier = state.carriersFilterContent[uid];
