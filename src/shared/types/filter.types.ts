@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-redeclare */
 export enum SortingFilterKind {
   BY_PRICE_TYPE_ASCENDING = 'byPriceAscending',
   BY_PRICE_TYPE_DESCENDING = 'byPriceDescending',
@@ -5,13 +6,12 @@ export enum SortingFilterKind {
 }
 
 export enum LayoversFilterKind {
-  ONE_LAYOVER = 'oneLayover',
-  WITHOUT_LAYOVERS = 'withoutLayovers',
+  oneLayover = 'oneLayover',
+  withoutLayovers = 'withoutLayovers',
 }
 
 export type LayoversFilterContentType = {
-  oneLayover: boolean;
-  withoutLayovers: boolean;
+  [key in LayoversFilterKind]: boolean;
 };
 
 export enum PriceFilterKind {

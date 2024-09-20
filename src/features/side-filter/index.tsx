@@ -109,15 +109,15 @@ export const SideFilters = () => {
         >
           <Checkbox
             label="- 1 пересадка"
-            name={LayoversFilterKind.ONE_LAYOVER}
-            id={LayoversFilterKind.ONE_LAYOVER}
+            name={LayoversFilterKind.oneLayover}
+            id={LayoversFilterKind.oneLayover}
             onChange={checkLayoversFilterHandler}
             checked={layoversFilterContent?.oneLayover}
           ></Checkbox>
           <Checkbox
             label="- без пересадок"
-            name={LayoversFilterKind.WITHOUT_LAYOVERS}
-            id={LayoversFilterKind.WITHOUT_LAYOVERS}
+            name={LayoversFilterKind.withoutLayovers}
+            id={LayoversFilterKind.withoutLayovers}
             onChange={checkLayoversFilterHandler}
             checked={layoversFilterContent?.withoutLayovers}
           ></Checkbox>
